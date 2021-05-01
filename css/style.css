@@ -1,0 +1,25 @@
+/* VARIABLES */
+
+:root {
+    --vert: rgb(95, 180, 162);
+    --blue: rgb(32, 58, 76);
+    --bluedark: rgb(51, 50, 61);
+    --greylight: rgb(250, 250, 250);
+    --grey: rgb(234, 234, 235);
+    --red: rgb(244, 48, 48);
+  }
+  
+  /* FONTS */
+  
+  @font-face {
+    font-family: "Ibarra Real Nova";
+  }
+  
+  @font-face {
+    src: url();
+  }
+  /* */
+  h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 700;
+  }
