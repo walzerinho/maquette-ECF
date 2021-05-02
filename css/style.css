@@ -8,18 +8,131 @@
     --grey: rgb(234, 234, 235);
     --red: rgb(244, 48, 48);
   }
-  
-  /* FONTS */
-  
-  @font-face {
-    font-family: "Ibarra Real Nova";
-  }
-  
-  @font-face {
 
-  }
-  /* */
+  /*STYLES*/
   h1 {
     font-family: "Ibarra Real Nova", serif;
     font-weight: 700;
+    font-size: 3,125rem;
   }
+
+  h2 {
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 2.5rem;
+  }
+
+  h3 {
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 2rem;
+  }
+
+  body{
+      background-color: #FAFAFA;
+  }
+
+  /* BUTTONS */
+
+.btn {
+    min-height: 48px;
+    min-width: 200px;
+}
+
+  .btn-primary 
+  {
+      background-color: var(--bluedark);
+      color: white;
+  }
+
+  .btn-primary:hover {
+      background-color: var(--vert);
+      color: white;
+  }
+
+  .btn-secondary
+  {
+      background-color: white;
+      border: 1px solid var(--bluedark);
+      color:black;
+  }
+
+  .btn-secondary:hover{
+      background-color: var(--bluedark);
+      color: white;
+  }
+ /* GENERAL CLASSES */
+
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.main-nav .ancre {
+    background-image: url(/img/Combined-shape.svg);
+    background-size: cover;
+    height: 32px;
+    width: 60.08px;
+
+}
+
+.main-nav .nav-list .item-nav-list {
+    font-family: "Public Sans";
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.main-nav .nav-list .item-nav-list:hover {
+    color: var(--vert);
+}
+
+ /* HOME */
+
+ .hero-bg{
+     background-image: url(/img/Bitmap.png);
+     background-size: cover;
+     height: 600px;
+ }
+
+ .hero-bg h1{
+     background-color: white;
+ }
+
+ /* SECOND SECTION HOME */
+
+
+
+.second-section-home div{
+    margin: auto;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--bluedark);
+    height: 80px;
+}
+.timot {
+    justify-content: space-around;
+    font-family: "Public Sans";
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.timot .first-list-item-footer {
+    padding: 10px;
+}
+
+.timot .second-list-item-footer {
+    padding: 10px;
+}
