@@ -41,10 +41,12 @@ a {
   min-height: 48px;
   min-width: 200px;
   text-transform: uppercase;
+  padding: 19px 34px 15px 32px;
+  font-family: "Public Sans";
 }
 
 .btn-primary {
-  background-color: var(--bluedark);
+  background-color: var(--blue);
   color: white;
 }
 
@@ -100,22 +102,38 @@ a {
 
 /* HOME */
 
-.hero-bg {
+.hero {
   background-image: url(/img/Bitmap.png);
   background-size: cover;
   height: 600px;
 }
 
-.hero-bg h1 {
+.hero-bg {
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-end;
   background-color: white;
 }
+
 
 /* SECOND SECTION HOME */
 
 .second-section-home div {
   margin: auto;
+  width: 30%;
 }
+/* THIRD SECTION HOME */
 
+.contact-us {
+  align-items: center;
+}
+.linear {
+height: 1px;
+width: 100%;
+background: #dcdcde;
+margin: 0 2rem;
+}
 /* FOOTER */
 
 footer {
