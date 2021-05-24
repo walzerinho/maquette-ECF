@@ -1,138 +1,138 @@
 /* VARIABLES */
 
 :root {
-    --vert: rgb(95, 180, 162);
-    --blue: rgb(32, 58, 76);
-    --bluedark: rgb(51, 50, 61);
-    --greylight: rgb(250, 250, 250);
-    --grey: rgb(234, 234, 235);
-    --red: rgb(244, 48, 48);
-  }
-
-  /*STYLES*/
-  h1 {
-    font-family: "Ibarra Real Nova", serif;
-    font-weight: 700;
-    font-size: 3,125rem;
-  }
-
-  h2 {
-      font-family: "Ibarra Real Nova", serif;
-      font-size: 2.5rem;
-  }
-
-  h3 {
-      font-family: "Ibarra Real Nova", serif;
-      font-size: 2rem;
-  }
-
-  body{
-      background-color: #FAFAFA;
-  }
-
-  /* BUTTONS */
-
-.btn {
-    min-height: 48px;
-    min-width: 200px;
+  --vert: rgb(95, 180, 162);
+  --blue: rgb(32, 58, 76);
+  --bluedark: rgb(51, 50, 61);
+  --greylight: rgb(250, 250, 250);
+  --grey: rgb(234, 234, 235);
+  --red: rgb(244, 48, 48);
 }
 
-  .btn-primary 
-  {
-      background-color: var(--bluedark);
-      color: white;
-  }
+/*STYLES*/
+h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 3, 125rem;
+}
 
-  .btn-primary:hover {
-      background-color: var(--vert);
-      color: white;
-  }
+h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5rem;
+}
 
-  .btn-secondary
-  {
-      background-color: white;
-      border: 1px solid var(--bluedark);
-      color:black;
-  }
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2rem;
+}
 
-  .btn-secondary:hover{
-      background-color: var(--bluedark);
-      color: white;
-  }
- /* GENERAL CLASSES */
+body {
+  background-color: #fafafa;
+}
 
- .container {
-     width: 80%;
-     margin: 0 auto;
- }
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+/* BUTTONS */
+
+.btn {
+  min-height: 48px;
+  min-width: 200px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--bluedark);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--vert);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: 1px solid var(--bluedark);
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bluedark);
+  color: white;
+}
+/* GENERAL CLASSES */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 /* HEADER */
 
 .main-nav {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .main-nav .ancre {
-    background-image: url(/img/Combined-shape.svg);
-    background-size: cover;
-    height: 32px;
-    width: 60.08px;
-
+  background-image: url(/img/Combined-shape.svg);
+  background-size: cover;
+  height: 32px;
+  width: 60.08px;
 }
 
 .main-nav .nav-list .item-nav-list {
-    font-family: "Public Sans";
-    text-transform: uppercase;
-    padding: 10px;
-    font-size: 12px;
+  font-family: "Public Sans";
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 12px;
 }
 
-.main-nav .nav-list .item-nav-list:hover {
-    color: var(--vert);
+.main-nav .nav-list .item-nav-list a:hover {
+  color: var(--vert);
 }
 
- /* HOME */
+/* HOME */
 
- .hero-bg{
-     background-image: url(/img/Bitmap.png);
-     background-size: cover;
-     height: 600px;
- }
+.hero-bg {
+  background-image: url(/img/Bitmap.png);
+  background-size: cover;
+  height: 600px;
+}
 
- .hero-bg h1{
-     background-color: white;
- }
+.hero-bg h1 {
+  background-color: white;
+}
 
- /* SECOND SECTION HOME */
+/* SECOND SECTION HOME */
 
-
-
-.second-section-home div{
-    margin: auto;
-
+.second-section-home div {
+  margin: auto;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: var(--bluedark);
-    height: 80px;
+  background-color: var(--bluedark);
+  height: 80px;
 }
 .timot {
-    justify-content: space-around;
-    font-family: "Public Sans";
-    text-transform: uppercase;
-    font-size: 12px;
+  justify-content: space-around;
+  font-family: "Public Sans";
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .timot .first-list-item-footer {
-    padding: 10px;
+  padding: 10px;
 }
 
 .timot .second-list-item-footer {
-    padding: 10px;
+  padding: 10px;
 }
