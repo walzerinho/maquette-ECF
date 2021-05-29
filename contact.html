@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-page</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../img/logo-footer.svg"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="main-nav flex">
+        <a class="ancre"></a>
+        <ul class="nav-list flex">
+          <li class="item-nav-list"><a href="index.html">home</a></li>
+          <li class="item-nav-list"><a href="portfolio.html">portfolio</a></li>
+          <li class="item-nav-list"><a href="contact.html">contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact-main">
+      <section class="get container">
+        <h2 class="h2-like">Get in Touch</h2>
+        <div class="section-content">
+          <p class="body1">
+            I’d love to hear about what you’re working on and how I could help.
+            I’m currently looking for a new role and am open to a wide range of
+            opportunities. My preference would be to find a position in a
+            company in London. But I’m also happy to hear about opportunites
+            that don’t fit that description. I’m a hard-working and positive
+            person who will always approach each task with a sense of purpose
+            and attention to detail. Please do feel free to check out my online
+            profiles below and get in touch using the form.
+          </p>
+          <address class="social-menu">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="https://github.com/" class="social-link"></a>
+              </li>
+              <li class="social-item">
+                <a href="https://twitter.com/?lang=fr" class="social-link"></a>
+              </li>
+              <li class="social-item">
+                <a href="https://www.linkedin.com/" class="social-link"></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+      <section class="contact container">
+        <h2 class="h2-like">Contact Me</h2>
+        <form
+          action="https://formspree.io/f/mjvjwgkk"
+          id="my-form"
+          class="section-content"
+          novalidate="false"
+          method="POST"
+        >
+          <label for="user">Name</label>
+          <input type="text" name="user" placeholder="Jane Appleseed" />
+          <p class="status status-text"></p>
+          <label for="Email">Email Address</label>
+          <input type="email" name="Email" placeholder="email@example.com" />
+          <p class="status status-mail"></p>
+          <label for="contact">Message</label>
+          <textarea
+            name="contact"
+            cols="30"
+            rows="10"
+            placeholder="How can I help?"
+          ></textarea>
+          <p class="status status-area"></p>
+          <input
+            type="submit"
+            id="my-form-button"
+            class="submit-btn"
+            value="send message"
+            formnovalidate="false"
+          />
+          <p id="valide" class="body1"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="flex">
+      <div class="container-footer container flex">
+        <ul class="first-list-footer flex">
+          <li class="first-list-item-footer">
+            <img src="/img/Combined Shape 2.svg" alt="doubles flèches" />
+          </li>
+          <li class="first-list-item-footer">home</li>
+          <li class="first-list-item-footer">portfolio</li>
+          <li class="first-list-item-footer">contact me</li>
+        </ul>
+
+        <ul class="second-list-footer flex">
+          <li class="second-list-item-footer">
+            <img src="/img/Path.svg" alt="GitHub" />
+          </li>
+          <li class="second-list-item-footer">
+            <img src="/img/Path(1).svg" alt="Twitter" />
+          </li>
+          <li class="second-list-item-footer">
+            <img src="/img/Shape.svg" alt="LinkedIn" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/nav.js"></script>
+  <script src="../js/form.js"></script>
+</html>

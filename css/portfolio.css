@@ -1,0 +1,14 @@
+.portfolio-container-content {
+  width: 30%;
+  margin: 0 auto;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.portfolio-container-content p {
+  margin-bottom: 3em;
+}
+
+.portfolio-container-content h2 {
+  color: #33323d;
+}

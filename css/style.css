@@ -12,22 +12,29 @@
 /*STYLES*/
 h1 {
   font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125em;
   font-weight: 700;
-  font-size: 3, 125rem;
+  letter-spacing: -0.45px;
+  line-height: 50px;
+  margin-top: 58px;
+  margin-bottom: 38px;
 }
 
 h2 {
   font-family: "Ibarra Real Nova", serif;
-  font-size: 2.5rem;
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
 h3 {
   font-family: "Ibarra Real Nova", serif;
-  font-size: 2rem;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 body {
   background-color: #fafafa;
+  font-family: -webkit-pictograph;
 }
 
 a {
@@ -43,6 +50,7 @@ a {
   text-transform: uppercase;
   padding: 19px 34px 15px 32px;
   font-family: "Public Sans";
+  text-align: center;
 }
 
 .btn-primary {
@@ -67,8 +75,17 @@ a {
 }
 /* GENERAL CLASSES */
 
+.h1-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125em;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  line-height: 50px;
+  margin-top: 58px;
+  margin-bottom: 38px;
+}
 .container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -76,8 +93,14 @@ a {
   display: flex;
 }
 
+section {
+  margin-bottom: 10em;
+}
 /* HEADER */
 
+header {
+  padding: 2em 0px;
+}
 .main-nav {
   justify-content: space-between;
 }
@@ -94,6 +117,7 @@ a {
   text-transform: uppercase;
   padding: 10px;
   font-size: 12px;
+  letter-spacing: 2px;
 }
 
 .main-nav .nav-list .item-nav-list a:hover {
@@ -109,13 +133,16 @@ a {
 }
 
 .hero-bg {
-  justify-content: flex-end;
+  width: 27.8125em;
+  background-color: #fafafa;
+  position: absolute;
+  bottom: -2%;
   flex-direction: column;
-  align-items: flex-start;
-  align-self: flex-end;
-  background-color: white;
 }
 
+.hero-bg a {
+  width: 45%;
+}
 
 /* SECOND SECTION HOME */
 
@@ -123,34 +150,49 @@ a {
   margin: auto;
   width: 30%;
 }
+
+.second-section-home div p {
+  margin-bottom: 2em;
+}
+
 /* THIRD SECTION HOME */
 
 .contact-us {
   align-items: center;
 }
 .linear {
-height: 1px;
-width: 100%;
-background: #dcdcde;
-margin: 0 2rem;
+  height: 1px;
+  width: 100%;
+  background: #dcdcde;
+  margin: 0 2rem;
 }
 /* FOOTER */
 
 footer {
   background-color: var(--bluedark);
   height: 80px;
+  padding: 2em 0;
+  color: #fafafa;
 }
-.timot {
-  justify-content: space-around;
+.container-footer {
+  justify-content: space-between;
   font-family: "Public Sans";
   text-transform: uppercase;
   font-size: 12px;
+  align-items: center;
 }
 
-.timot .first-list-item-footer {
+.container-footer .first-list-item-footer {
   padding: 10px;
+  letter-spacing: 2px;
+  margin: auto;
 }
 
-.timot .second-list-item-footer {
+.container-footer img {
+  margin: 0;
+}
+
+.container-footer .second-list-item-footer {
   padding: 10px;
+  margin: auto;
 }
