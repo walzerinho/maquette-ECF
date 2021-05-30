@@ -70,20 +70,72 @@ img {
 }
 
 .column {
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .sous_texte {
-font-family: "Public Sans", sans-serif;
-font-weight: 400;
-font-size: 1em;
-letter-spacing: 0;
-text-decoration: none;
-font-size: 16px;
-opacity: 0.5;
-color: #33323D;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #33323d;
 }
 
 .blue-text {
   color: var(--vert);
 }
+
+/* RESPONSIVE TABLETTE */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  article {
+    flex-direction: column;
+  }
+  .project-container-content:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2.5rem;
+    height: 100%;
+  }
+  .project-container-content:first-child .btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 11.125rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-container-content:first-child p {
+    margin: 0;
+  }
+}
+.project-container-content img {
+  margin: auto;
+}
+@media screen and (max-width: 650px) {
+  article {
+    flex-direction: column;
+  }
+  .h2-like {
+    font-size: 2.5rem;
+  }
+  .project-container-content {
+    margin-bottom: 0;
+  }
+  .link-content:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link-content:last-child {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-top: 0;
+  }
+  .link-content h3 {
+    font-size: 2.5rem;
+  }
+} ;
