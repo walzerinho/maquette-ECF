@@ -87,3 +87,180 @@
     width: 168px;
     font-weight: 700;
   }
+
+  .contact-main section {
+    justify-content: space-between;
+    margin-bottom: 5em;
+    border-top: 1px solid var(--bluedark);
+    padding-top: 3.375em;
+}
+
+.section-content {
+  width: 39.0625em;
+flex-direction: column;
+justify-content: left;
+}
+
+.social-item .social-link {
+  background : url("/img/GitHub.svg");
+}
+.contact-main section .social-menu .social-list .social-item:nth-child(2) .social-link {
+  background-image: url("/img/black_twitter.svg");
+}
+.contact-main section .social-menu .social-list .social-item:last-child .social-link {
+  background-image: url("/img/linkedin.svg");
+}
+
+.contact-main section .social-menu .social-list .social-item:nth-child(2) {
+  margin: 0 15px;
+}
+.contact-main section .section-content .sous_texte {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+.contact-main section {
+  justify-content: space-between;
+  margin-bottom: 5em;
+  border-top: 1px solid var(--bluedark);
+  padding-top: 3.375em;
+}
+
+.contact-main section .social-menu .social-list .social-item .social-link {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  min-width: 25px;
+  height: 25px;
+}
+.contact-main section .section-content {
+  width: 39.0625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.contact-main section .social-menu .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: left;
+}
+
+.contact-main section label {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--bluedark);
+  opacity: 0.8;
+  font-size: 0.8125em;
+  margin-bottom: 15px;
+}
+.contact-main section input {
+  background-color: #33323d1a;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--bluedark);
+  font-size: 0.8125em;
+  position: relative;
+  padding-left: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  resize: none;
+  border: 1px solid #ECECED;
+}
+
+.contact-main section textarea {
+  background-color: #33323d1a;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  color:var(--bluedark);
+  font-size: 0.8125em;
+  position: relative;
+  padding-left: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  resize: none;
+  border: 1px solid #ECECED;
+}
+.contact-main section textarea::-moz-placeholder {
+  opacity: 0.4;
+}
+.contact-main section textarea:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.contact-main section textarea::placeholder {
+  opacity: 0.4;
+}
+.contact-main section textarea:hover {
+  transition: 0.3s ease-in-out;
+  background: #ECECED 0% 0% no-repeat padding-box;
+  border: 1px solid var(--vert);
+  opacity: 1;
+}
+.contact-main section textarea:hover::-moz-placeholder {
+  opacity: 1;
+}
+.contact-main section textarea:hover:-ms-input-placeholder {
+  opacity: 1;
+}
+.contact-main section textarea:hover::placeholder {
+  opacity: 1;
+}
+.contact-main section .submit-btn {
+  font-family: "Public Sans", sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  font-size: 0.75em;
+  padding: 16px 0px 16px 40px;
+  color: white;
+  text-align: center;
+  background-color: #203A4C;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 400;
+  opacity: 1;
+  margin-bottom: 0;
+  margin-top: 24px;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.contact-main section .submit-btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: var(--vert);
+}
+.contact-main section .submit-btn:disabled {
+  background-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.contact-main section input:hover::placeholder {
+  opacity: 1;
+}
+
+.contact-main section .status {
+  font-family: "Public Sans", sans-serif;
+  color: var(--red);
+  font-weight: 600;
+  font-style: italic;
+  text-align: left;
+  font-size: 0.625em;
+  margin-bottom: 32px;
+}
+.contact-main section .invalid-input {
+  background: #ECECED 0% 0% no-repeat padding-box;
+  border: 1px solid #F43030;
+  opacity: 1;
+}

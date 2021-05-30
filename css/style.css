@@ -33,7 +33,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: var(--greylight);
   font-family: -webkit-pictograph;
 }
 
@@ -54,13 +54,30 @@ a {
 }
 
 .btn-primary {
-  background-color: var(--blue);
+  font-family: "Public Sans", sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  font-size: 0.75em;
+  padding: 16px 0px 16px 40px;
   color: white;
+  text-align: center;
+  background-color: var(--blue);
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btn-primary:hover {
+  transition: 0.3s ease-in-out;
   background-color: var(--vert);
-  color: white;
+}
+
+.btn-primary:disabled {
+  background-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-secondary {
@@ -128,6 +145,7 @@ header {
   color: var(--vert);
 }
 
+
 /* HOME */
 
 .hero {
@@ -148,6 +166,16 @@ header {
   width: 45%;
 }
 
+.hero .btn-primary::before {
+  content: url(/img/down_arrows.svg);
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+}
 /* SECOND SECTION HOME */
 
 .second-section-home div {
@@ -206,4 +234,101 @@ footer {
 .container-footer .second-list-item-footer {
   padding: 10px;
   margin: auto;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .container {
+    width: 43em;
+  }
+
+  main {
+    margin-bottom: initial;
+  }
+  main .hero {
+    margin-bottom: initial;
+  }
+  main .hero .hero-content {
+    bottom: 274px;
+  }
+  main .about {
+    margin-top: 6.2em;
+    margin-bottom: 6.2em;
+  }
+  main .project {
+    margin-bottom: 4.7em;
+  }
+  main .project span {
+    min-width: 7.0625em;
+  }
+
+  .portfolio-main section .section-content {
+    width: 281px;
+  }
+  .portfolio-main section figure {
+    width: initial;
+    height: initial;
+    align-self: center;
+  }
+  .portfolio-main .project {
+    margin-top: 5.25em;
+    margin-bottom: 4.5625em;
+  }
+  .portfolio-main .project span {
+    min-width: 7.0625em;
+  }
+
+  .bookmark-main-page, .manage-main-page, .fylo-main-page, .insure-main-page {
+    margin-bottom: 0;
+  }
+  .bookmark-main-page .section-project, .manage-main-page .section-project, .fylo-main-page .section-project, .insure-main-page .section-project {
+    flex-direction: column;
+  }
+  .bookmark-main-page .section-project figure, .manage-main-page .section-project figure, .fylo-main-page .section-project figure, .insure-main-page .section-project figure {
+    margin-top: 2.5em;
+  }
+  .bookmark-main-page .section-content, .manage-main-page .section-content, .fylo-main-page .section-content, .insure-main-page .section-content {
+    margin-top: 2.5em;
+  }
+  .bookmark-main-page .section-content:first-child, .manage-main-page .section-content:first-child, .fylo-main-page .section-content:first-child, .insure-main-page .section-content:first-child {
+    margin-right: initial;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas: "A B" "C B" "D B" "E B";
+  }
+  .bookmark-main-page .section-content:first-child .h2-like, .manage-main-page .section-content:first-child .h2-like, .fylo-main-page .section-content:first-child .h2-like, .insure-main-page .section-content:first-child .h2-like {
+    grid-area: A;
+    margin-top: 34px;
+  }
+  .bookmark-main-page .section-content:first-child .body2, .manage-main-page .section-content:first-child .body2, .fylo-main-page .section-content:first-child .body2, .insure-main-page .section-content:first-child .body2 {
+    grid-area: B;
+    margin-left: 4.7em;
+  }
+  .bookmark-main-page .section-content:first-child:last-child.cyan, .manage-main-page .section-content:first-child:last-child.cyan, .fylo-main-page .section-content:first-child:last-child.cyan, .insure-main-page .section-content:first-child:last-child.cyan {
+    grid-area: D;
+  }
+  .bookmark-main-page .section-content:first-child .cyan:nth-of-type(1), .manage-main-page .section-content:first-child .cyan:nth-of-type(1), .fylo-main-page .section-content:first-child .cyan:nth-of-type(1), .insure-main-page .section-content:first-child .cyan:nth-of-type(1) {
+    grid-area: C;
+  }
+  .bookmark-main-page .section-content:first-child .secondary-btn, .manage-main-page .section-content:first-child .secondary-btn, .fylo-main-page .section-content:first-child .secondary-btn, .insure-main-page .section-content:first-child .secondary-btn {
+    grid-area: E;
+    margin-top: 0;
+  }
+  .bookmark-main-page .project, .manage-main-page .project, .fylo-main-page .project, .insure-main-page .project {
+    margin-top: 5.25em;
+    margin-bottom: 4.5625em;
+  }
+  .bookmark-main-page .project span, .manage-main-page .project span, .fylo-main-page .project span, .insure-main-page .project span {
+    min-width: 7.0625em;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px){
+
 }

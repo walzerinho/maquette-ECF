@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact-page</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="../img/logo-footer.svg"
     />
-    <link rel="stylesheet" href="../css/base.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="container">
@@ -30,10 +31,10 @@
       </nav>
     </header>
     <main class="contact-main">
-      <section class="get container">
+      <section class="get container flex">
         <h2 class="h2-like">Get in Touch</h2>
-        <div class="section-content">
-          <p class="body1">
+        <div class="section-content flex">
+          <p class="sous_texte">
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
             opportunities. My preference would be to find a position in a
@@ -44,7 +45,7 @@
             profiles below and get in touch using the form.
           </p>
           <address class="social-menu">
-            <ul class="social-list">
+            <ul class="social-list flex">
               <li class="social-item">
                 <a href="https://github.com/" class="social-link"></a>
               </li>
@@ -58,7 +59,7 @@
           </address>
         </div>
       </section>
-      <section class="contact container">
+      <section class="contact container flex">
         <h2 class="h2-like">Contact Me</h2>
         <form
           action="https://formspree.io/f/mjvjwgkk"
@@ -84,7 +85,7 @@
           <input
             type="submit"
             id="my-form-button"
-            class="submit-btn"
+            class="btn submit-btn"
             value="send message"
             formnovalidate="false"
           />
