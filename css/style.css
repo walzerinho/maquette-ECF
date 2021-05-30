@@ -10,7 +10,7 @@
 }
 
 /*STYLES*/
-h1 {
+.h1-like {
   font-family: "Ibarra Real Nova", serif;
   font-size: 3.125em;
   font-weight: 700;
@@ -20,13 +20,13 @@ h1 {
   margin-bottom: 38px;
 }
 
-h2 {
+.h2-like {
   font-family: "Ibarra Real Nova", serif;
   font-size: 2.5em;
   font-weight: 700;
 }
 
-h3 {
+.h3-like {
   font-family: "Ibarra Real Nova", serif;
   font-size: 2em;
   font-weight: 400;
@@ -79,13 +79,13 @@ a {
   font-family: "Ibarra Real Nova", serif;
   font-size: 3.125em;
   font-weight: 700;
-  letter-spacing: -0.45px;
+  letter-spacing: -0.36px;
   line-height: 50px;
   margin-top: 58px;
   margin-bottom: 38px;
 }
 .container {
-  width: 60%;
+  width: 69.15em;
   margin: 0 auto;
 }
 
@@ -95,6 +95,10 @@ a {
 
 section {
   margin-bottom: 10em;
+}
+
+p {
+  line-height: 2em;
 }
 /* HEADER */
 
@@ -159,13 +163,20 @@ header {
 
 .contact-us {
   align-items: center;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.contact-us h2 {
+  font-family: "Ibarra Real Nova";
 }
 .linear {
   height: 1px;
-  width: 100%;
+  width: 80%;
   background: #dcdcde;
   margin: 0 2rem;
 }
+
 /* FOOTER */
 
 footer {
@@ -189,7 +200,7 @@ footer {
 }
 
 .container-footer img {
-  margin: 0;
+  margin-right: 2em;
 }
 
 .container-footer .second-list-item-footer {

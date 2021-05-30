@@ -6,13 +6,12 @@
   border-top: 1px solid rgba(51, 50, 61, 0.15);
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   height: 35em;
-  margin-right: 10em;
+  margin-right: 5em;
 }
 
 .project-container-content p {
   margin-bottom: 2em;
   font-family: "Public Sans";
-  color: #33323d;
 }
 
 .project-container {
@@ -26,4 +25,65 @@ h3 {
 
 img {
   margin-bottom: 2em;
+}
+/* LINKS PROJECTS */
+
+.project-link {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+.project-link span {
+  min-height: 100%;
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 auto;
+}
+.link-content {
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  padding: 1em 0;
+}
+
+.link-content img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.link-content:hover {
+  transition: 0.3s ease-in-out;
+}
+
+.link-content:last-child {
+  text-align: right;
+}
+
+.link-content:last-child img {
+  margin-right: 0;
+  margin-left: 2em;
+}
+.link-content:first-child img {
+  margin-right: 2em;
+}
+
+.column {
+  flex-direction: column; 
+}
+
+.sous_texte {
+font-family: "Public Sans", sans-serif;
+font-weight: 400;
+font-size: 1em;
+letter-spacing: 0;
+text-decoration: none;
+font-size: 16px;
+opacity: 0.5;
+color: #33323D;
+}
+
+.blue-text {
+  color: var(--vert);
 }

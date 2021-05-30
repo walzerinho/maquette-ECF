@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage Project</title>
+    <title>Bookmark Project</title>
   </head>
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/projects.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap"
@@ -15,8 +18,6 @@
     href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="/css/base.css" />
-  <link rel="stylesheet" href="/css/style.css" />
   <body>
     <header class="container">
       <nav class="main-nav flex">
@@ -31,20 +32,20 @@
     <main class="container">
       <img src="/img/Porto1_bookmark.png" />
       <article class="flex">
-        <div>
-          <h1>Bookmark</h1>
+        <div class="project-container-content">
+          <h2 class="h1-like">Bookmark</h2>
           <p>
             This project required me to build a fully responsive landing page to
             the designs provided. I used HTML5, along with CSS Grid and
             JavaScript for the areas that required interactivity, such as the
             testimonial slider.
           </p>
-          <p>Interaction Design / Front End Development</p>
-          <p>HTML / CSS / JS</p>
+          <p class="blue-text">Interaction Design / Front End Development</p>
+          <p class="blue-text">HTML / CSS / JS</p>
           <a href="#" class="btn btn-primary">visit website</a>
         </div>
-        <div>
-          <h2>Project Background</h2>
+        <div class="project-container-content">
+          <h3 class="h3-like">Project Background</h3>
           <p>
             This project was a front-end challenge from CEFIM BootCamp. It’s a
             platform that enables you to practice building websites to a design
@@ -54,17 +55,41 @@
             solve real-world coding problems. I’ve learned something new with
             each project, helping me to improve and adapt my style.
           </p>
-          <h2>Static Previews</h2>
+          <h3 class="h3-like">Static Previews</h3>
           <img src="/img/Bitmap_bookmark.png" />
           <img src="/img/Bitmap_bookmark_copy.png" />
         </div>
       </article>
+
+      <section class="project-link container flex">
+        <a class="link-content flex" href="manage.html">
+          <img src="/img/arrow-left.svg" alt="previous">
+          <div class="column">
+            <h3 class="h3-like">Manage</h3>
+            <p class="sous_texte">Previous Project</p>
+          </div>
+        </a>
+        <span></span>
+        <a class="link-content flex" href="insure.html">
+          <div class="column flex">
+            <h3 class="h3-like">Insure</h3>
+            <p class="sous_texte">Next Project</p>
+          </div>
+          <img src="/img/arrow-right.svg">
+        </a>
+      </section>
+
+
       <section class="contact-us flex">
         <h2>Interested in doing a project together?</h2>
         <div class="linear"></div>
-        <a class="btn btn-secondary">contact me</a>
+        <a class="btn btn-secondary" href="contact.html">contact me</a>
       </section>
+    
+
     </main>
+
+
     <footer class="flex">
       <div class="container-footer container flex">
         <ul class="first-list-footer flex">

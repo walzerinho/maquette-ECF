@@ -1,0 +1,89 @@
+.formulaire-section {
+    padding: 5.68em 0;
+  }
+  .formulaire-section .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .formulaire-section .container .form-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulaire-section .container .form-text .h4-like, .formulaire-section .container .form-text .h1-like {
+    text-align: left;
+  }
+  .formulaire-section .container .form-text .orange:not(:first-child) {
+    font-size: 0.875em;
+  }
+  .formulaire-section .container .form-text .nunito-text {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+  .formulaire-section .container .form-text .social-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+    filter: opacity(0.5);
+  }
+  .formulaire-section .container .form-text .social-list .social-item:not(:first-child) {
+    margin-left: 1.875em;
+  }
+  .formulaire-section .container .form-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.25em;
+  }
+  .formulaire-section .container .form-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulaire-section .container .form-content form .label-title {
+    margin-bottom: 0.875em;
+  }
+  .formulaire-section .container .form-content form input:not(.button-orange) {
+    margin-bottom: 1.5em;
+    min-width: 33.5em;
+    min-height: 3.4375em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+  }
+  .formulaire-section .container .form-content form .select-content {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  .formulaire-section .container .form-content form .select-content .select-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulaire-section .container .form-content form .select-content .select-item select {
+    width: 16.25em;
+    min-height: 3.4375em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    padding-left: 1.5em;
+    font-family: "Nunito", sans-serif;
+  }
+  .formulaire-section .container .form-content form textarea {
+    margin-bottom: 2em;
+    width: 33.5em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    color: #333333;
+    opacity: 50%;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.125em;
+    height: 9em;
+  }
+  .formulaire-section .container .form-content form .button-orange {
+    width: 168px;
+    font-weight: 700;
+  }
